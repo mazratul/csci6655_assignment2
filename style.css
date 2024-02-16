@@ -55,7 +55,6 @@ body{
 .topNavBar{
     background-color: black;
     height: 40px;
-    border-radius: 5px;
     padding: 5px;
     position: fixed;
     top: 0;
@@ -94,19 +93,16 @@ h1, h2, h3{
 }
 
 #aboutMe{
-    background-color: #546A7B;
-     
+    background-color: #546A7B;    
     color: snow;
 }
 
 #skills{
-    background-color: #abc4ff;
-     
+    background-color: #abc4ff;    
 }
 
 #projects{
     background-color: #62929E;
-     
     padding: 20px 0 20px 0;
 }
 
@@ -117,26 +113,22 @@ h1, h2, h3{
 }
 
 #testimonials{
-    background-color: #ffee93;
-     
+    background-color: #ffee93;  
     padding: 20px 0 20px 0;
 }
 
 #education{
-    background-color: #aeb9c2;
-     
+    background-color: #aeb9c2;  
     padding: 20px 0 20px 0;
 }
 
 #blogs{
-    background-color: #C6C5B9;
-     
+    background-color: #C6C5B9;   
     padding: 70px 0 20px 0;
 }
 
 #contactMe{
-    background-color: #FDFDFF;
-    
+    background-color: #FDFDFF;  
     padding: 20px 0 20px 0;
 }
 
