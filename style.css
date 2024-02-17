@@ -3,56 +3,12 @@
 }
 
 body{
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
 }
 
-.spacer-100{
-    height: 100px;
-}
-
-.spacer-70{
-    height: 70px;
-}
-
-.spacer-50{
-    height: 50px;
-}
-
-.spacer-10{
-    height: 10px;
-}
-
-.spacer-15{
-    height: 15px;
-}
-
-.spacer-20{
-    height: 20px;
-}
-
-.spacer-5{
-    height: 5px;
-}
-
-.container{
-    width: 100%;
-}
-
-.floatLeft{
-    float: left;
-}
-
-.floatRight{
-    float: right;
-}
-
-.displayInlineBlock{
-    display: inline-block;
-}
-
-.topNavBar{
+#navbar{
     background-color: black;
     height: 40px;
     padding: 5px;
@@ -70,18 +26,17 @@ body{
     border-radius: 8px;
     height: 30px;
     padding-top: 5px;
-}
-
-.navItem:hover{
-    background-color: grey;
-}
-
-a{
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+.navItem:hover{
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+}
+
+.navItem:hover, .bottomLinks img:hover{
     cursor: pointer;
 }
 
@@ -91,8 +46,15 @@ h1, h2, h3{
     text-align: center;
 }
 
+.sectionDecoration{
+    padding: 20px 0 90px 0;
+    text-align: center;
+}
+
 .sectionHeader{
     font-size: 30px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 #aboutMe{
@@ -101,38 +63,32 @@ h1, h2, h3{
 }
 
 #skills{
-    background-color: #abc4ff;    
+    background-color: #abc4ff;
 }
 
 #projects{
     background-color: #62929E;
-    padding: 20px 0 20px 0;
 }
 
 #experience{
     background-color: #393D3F;
-    padding: 20px 0 20px 0;
-    color: #d7d4d4;
+    color: snow; 
 }
 
 #testimonials{
     background-color: #ffee93;  
-    padding: 20px 0 20px 0;
 }
 
 #education{
-    background-color: #aeb9c2;  
-    padding: 20px 0 20px 0;
+    background-color: #aeb9c2; 
 }
 
 #blogs{
     background-color: #C6C5B9;   
-    padding: 70px 0 20px 0;
 }
 
 #contactMe{
     background-color: #FDFDFF;  
-    padding: 20px 0 20px 0;
 }
 
 .aboutMeItem{
@@ -141,27 +97,24 @@ h1, h2, h3{
     height: 370px;
     margin: 0 3.5% 0 3.5%;
     width: 40%;
-}
-
-.aboutMeInfo p{
-    font-size: 18px;
-    text-align: left;
-}
-
-.aboutMeImg{
     border-radius: 10px;
     overflow: hidden;
 }
 
-.aboutMeInfo h2{
+#myDescription{
+    font-size: 18px;
+    text-align: left;
+}
+
+#myName{
     font-size: 40px;
 }
 
-.aboutMeInfo h3{
+#myProfession{
     font-size: 30px;
 }
 
-.aboutMeImg img{
+.myImage{
     object-fit: cover;
     height: 370px;
     width: 100%;
@@ -183,7 +136,7 @@ h1, h2, h3{
     margin: 0 4% 0 4%;
 }
 
-.skillInfo h3{
+.skillTypeHeading{
     text-align: left;
 }
 
@@ -197,7 +150,8 @@ h1, h2, h3{
     border-radius: 10px;
     padding: 15px;
     background-color: #FDFDFF;
-    margin: 0 3.5% 0 3.5%;
+    margin: 0 3.5% 50px 3.5%;
+    text-align: center;
 }
 
 .projectImg{
@@ -212,41 +166,55 @@ h1, h2, h3{
     height: 270px;
     width: 48%;
     overflow: hidden;
-    overflow-wrap: break-word;
 }
 
-.projectInfo p{
+.projectDescription{
     text-align: left;
     margin-top: 0;
     margin-left: 4%;
 }
 
-.projectImg img{
+.projectImage{
     display: block;
     object-fit: cover;
     height: 240px;
     width: 100%;
 }
 
-.projectImg h4{
+.projectTitle{
     display: block;
     margin-top: 5px;
     text-align: center;
     height: 15px;
 }
 
-.experienceCD, .experiencePL{
-    height: 25px;
+.experienceLeft{
+    float: left;
+    text-align: left;
+    width: 35%;
+    margin-left: 15%;
 }
 
-.experienceCD, .experiencePL, .experienceInfo{
-    margin-left: auto;
-    margin-right: auto;
+.experienceRight{
+    float: right;
+    text-align: right;
+    width: 35%;
+    margin-right: 15%;
+}
+
+.positionHeading{
+    font-size: 20px;
+}
+
+.experienceDescription{
+    margin-top: 20px;
+}
+
+.experienceDescription{
+    margin-left: 15%;
+    margin-right: 15%;
     width: 70%;
-}
-
-.experiencePL b{
-    font-size: 18px;
+    text-align: left;
 }
 
 .testimonialItem{
@@ -260,7 +228,7 @@ h1, h2, h3{
     background-color: #FDFDFF;
 }
 
-.testimonialItem img{
+.testimonialImage{
     border-radius: 50%;
 }
 
@@ -276,15 +244,15 @@ h1, h2, h3{
     overflow: hidden;
 }
 
-.blogItem h3{
+.blogTitle{
     margin-top: 5px;
 }
 
-.blogItem p{
+.blogDescription{
     text-align: left;
 }
 
-.testimonialItem img, .blogItem img{
+.testimonialImage, .blogImage{
     object-fit: cover;
     width: 100%;
     height: 300px;
@@ -301,11 +269,11 @@ h1, h2, h3{
     overflow: hidden;
 }
 
-.educationInfo h3{
+.educationInstitutionName{
     text-align: left;
 }
 
-.contactMeBlock{
+#contactMeBlock{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -317,29 +285,37 @@ h1, h2, h3{
     border-radius: 10px;
 }
 
-.contactMeRow1, .contactMeRow2{
+#messageInput{
+    width: 100%;
     margin-bottom: 10px;
-}
-
-.contactMeRow1 input, .contactMeRow2 textarea{
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 10px 20px;
+    margin: 10px 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
 }
 
-.nameDiv,.emailDiv{
-    width: 45%;
+#nameInput{
+    float: left;
 }
 
-input[type=submit] {
-    width: 30%;
+#emailInput{
+    float: right;
+}
+
+.inputDecoration{
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 47%;
+}
+
+#sendMessage{
+    width: 250px;
     background-color: #1a94ff;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+    padding: 10px 0px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -347,31 +323,14 @@ input[type=submit] {
 .bottomLinks{
     background-color: #C6C5B9;
     padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.bottomLinks img{
+.socialLink{
     margin: 0 10px 0 10px;
     width: 30px;
     height: 30px;
     object-fit: contain;
-}
-
-.bottomLinks img:hover{
-    cursor: pointer;
-}
-
-.container::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.inlineBlockContainer{
-    text-align: center;
-}
-
-.inlineBlockContainer::after{
-    content: "";
-    width: 100%;
-    display: inline-block;
 }
