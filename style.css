@@ -73,13 +73,16 @@ body{
 }
 
 .navItem:hover{
-    cursor: pointer;
     background-color: grey;
 }
 
 a{
     text-decoration: none;
     color: white;
+}
+
+a:hover{
+    cursor: pointer;
 }
 
 h1, h2, h3{
